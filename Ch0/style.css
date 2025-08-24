@@ -1,0 +1,27 @@
+/* style.css - external CSS file */
+
+body {
+    font-family: Arial, sans-serif; /* Overall font */
+    background-color: #f4f4f4;      /* Light gray background */
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;                /* Heading in dark blue */
+    text-align: center;             /* Center heading */
+}
+
+p {
+    color: #333;                    /* Dark gray text */
+    font-size: 18px;                /* Larger paragraph font */
+}
+
+a {
+    color: green;                   /* Link in green */
+    text-decoration: none;          /* Remove underline */
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;                     /* Turns red when hovered */
+}
