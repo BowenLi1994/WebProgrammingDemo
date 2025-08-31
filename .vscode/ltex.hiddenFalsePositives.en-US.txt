@@ -1,0 +1,4 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QThe <del>delete</del>.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q</code> <br><br> <kbd> The Keyboard Input Format.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q</kbd> </p> </body> </html>\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\Q</kbd> </p> <!--The Hyperlink--> <a href=\"https://www.cs.fsu.edu/\">FSU Computer Science</a> <p> The Image <br> <img src=\"https://www.w3.org/Icons/w3c_home\"> <br> <img src=\"\" alt=\"The image is Missing\"> </p> </body> </html>\\E$"}
