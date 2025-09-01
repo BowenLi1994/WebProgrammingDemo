@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Layout Example</title>
+  <style>
+    header, nav, main, aside, footer {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 5px;
+    }
+    main {
+      display: flex;
+    }
+    article {
+      flex: 3;
+      margin-right: 10px;
+    }
+    aside {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a> | 
+    <a href="#">About</a> | 
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Article Title</h2>
+      <p>This is the main content area where the article goes.</p>
+    </article>
+
+    <aside>
+      <h2>Sidebar</h2>
+      <p>Related links or ads.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

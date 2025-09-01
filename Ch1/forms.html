@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+    <!--The input:text-->
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+    </form>
+
+    <hr>
+
+    <!--The input:password-->
+    <form>
+        Username:<br>
+        <input type="text" name="username"><br>
+        Password:<br>
+        <input type="password" name="pwd">
+    </form>
+
+    <hr>
+
+    <!--The Submit Button-->
+    <form>
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <!--The Reset Button-->
+    <form>
+        <input type="reset">
+    </form>
+
+    <hr>
+
+    <!--The input:Radio Button-->
+    <form>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other">
+        Other
+    </form>
+
+    <hr>
+
+    <!--The input:checkbox-->
+    <form>
+        <input type="checkbox" name="vehicle1" value="Bike">
+        I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car">
+        I have a car<br>
+        <input type="checkbox" name="vehicle3" value="Scooter">
+        I have a scooter
+    </form>
+
+    <hr>
+
+    <!--The input:dropdown list-->
+    <form>
+        <select name="cars">
+            <option value="car1">Toyota</option>
+            <option value="car2">GMC</option>
+            <option value="car3">BMW</option>
+            <option value="car4" selected>Mazda</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <!--The input:text area-->
+    <form>
+        <textarea name="message" rows="10"
+            cols="30">The cat was playing in the garden.
+        </textarea>
+    </form>
+
+    <hr>
+
+    <!--The input: option group-->
+    <form>
+        <label for="car">Choose a car:</label>
+        <select id="car" name="car">
+            <optgroup label="German Cars">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="vw">Volkswagen</option>
+            </optgroup>
+            <optgroup label="Japanese Cars">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label><input type="checkbox" name="subscribe"> Subscribe to
+                newsletter</label>
+            <br>
+            <label><input type="checkbox" name="updates"> Receive
+                updates</label>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <video width=“480" height=“360" autoplay controls>
+        <source src="demo.mp4" type="video/mp4">
+    </video>
+
+</html>
