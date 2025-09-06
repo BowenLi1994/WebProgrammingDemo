@@ -1,27 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-.box {
-  border: 2px solid black;
-  padding-top: 30px;  
-  padding-right: 30px;  
-  padding-bottom: 30px;  
-  padding-left: 30px;   
-}
-</style>
-    </head>
-    <body>
 
-        <h1>
-            The box in CSS
-        </h1>
+<head>
+    <style>
+        .box1 {
+            border: 2px solid black;
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+        }
 
-        <div class="box">
-            <mark>
-                This box has different padding on each side.
-            </mark>
-        </div>
+        .box2 {
+            border: 2px solid black;
+            padding: 10px 20px 30px 40px;
+        }
 
-    </body>
+        .box3 {
+            border: 2px solid black;
+            padding: 40px 30px;
+        }
+
+        .box4 {
+            border: 2px solid black;
+            padding: 40px 30px;
+            margin: 30px 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>
+        The box in CSS
+    </h1>
+
+    <div class="box1">
+        <mark>
+            This box has different padding on each side.
+        </mark>
+    </div>
+    <hr>
+    <div class="box2">
+        <mark>
+            This box has different padding on each side.
+        </mark>
+    </div>
+    <hr>
+    <div class="box3">
+        <mark>
+            This box has different padding on each side.
+        </mark>
+    </div>
+    <hr>
+    <div class="box4">
+        <mark>
+            This box has different padding on each side.
+        </mark>
+    </div>
+
+    <table style="border: 1px solid black; border-collapse: collapse;">
+        <tr>
+            <td style="border: 1px solid red;">A</td>
+            <td style="border: 1px solid blue;">B</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table style="border: 1px solid black; border-collapse: separate;">
+        <tr>
+            <td style="border: 1px solid red;">A</td>
+            <td style="border: 1px solid blue;">B</td>
+        </tr>
+    </table>
+
+    <hr>
+    <div style="background: lightblue;">Box 1</div>
+    <div style="background: lightgreen;">Box 2</div>
+    <span style="background: pink;">Inline 1</span>
+    <span style="background: yellow;">Inline 2</span>
+
+
+
+</body>
+
 </html>
