@@ -1,0 +1,41 @@
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: pink;
+}
+
+a:active {
+    color: blue;
+}
+
+
+/* a:hover {
+  color: blue;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: orange;
+} */
+
+
+/* a.highlight:hover {
+ color: yellow;
+ }
+
+ a#anchor1:hover{
+    color:goldenrod;
+ } */

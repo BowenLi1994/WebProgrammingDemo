@@ -1,0 +1,27 @@
+#display-div1{
+ background-color: black;
+ color: white;
+ padding: 20px;
+}
+
+#display-span1{
+    color: red;
+}
+
+
+#display-span2,#display-strong1{
+    display: block;
+}
+
+/* #display-para1{
+    display: inline;
+} */
+
+.menu li{
+	list-style: none;
+	display: inline-block;
+	border: 1px solid blue;
+	padding: 5px;
+	width: 100px;
+	text-align: center;
+}

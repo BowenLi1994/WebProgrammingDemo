@@ -1,0 +1,70 @@
+/* .static {
+    position: static;
+    height: 100px;
+    width: 200px;
+    background-color: green;
+} */
+
+
+
+/* .relative {
+    position: relative;
+    left: 80px;
+    top: 20px;
+    height: 100px;
+    width: 200px;
+    background-color: yellow;
+} */
+
+/* .absolute-top {
+    position: absolute;
+    right: 10px;
+    top: -5px;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+} */
+
+/* .absolute-bot {
+    position: absolute;
+    left: 60px;
+    bottom: -50px;
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+} */
+
+/* .absolute-nested1{
+    position: absolute;
+    bottom: 10px;
+    background-color: blueviolet;
+    height: 50px;
+    width: 100px;
+} */
+
+/* .absolute-nested2{
+    position: absolute;
+    bottom: 10px;
+    background-color: blueviolet;
+    height: 50px;
+    width: 100px;
+} */
+
+/* .absolute-z1 {
+    position:relative;
+    background-color: brown;
+    left:300px;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.absolute-z2 {
+    position: relative;
+    left:320px;
+    bottom: 20px;
+    background-color: gold;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+} */
