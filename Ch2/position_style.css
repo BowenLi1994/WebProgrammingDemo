@@ -1,62 +1,62 @@
-/* .static {
+.static {
     position: static;
     height: 100px;
     width: 200px;
     background-color: green;
-} */
+}
 
 
 
-/* .relative {
+.relative {
     position: relative;
-    left: 80px;
-    top: 20px;
+    left: 10px;
+    top: 10px;
     height: 100px;
     width: 200px;
     background-color: yellow;
-} */
+}
 
-/* .absolute-top {
+.absolute-top {
     position: absolute;
     right: 10px;
-    top: -5px;
+    top: -50px;
     background-color: red;
     height: 100px;
     width: 200px;
-} */
+}
 
-/* .absolute-bot {
+.absolute-bot {
     position: absolute;
     left: 60px;
     bottom: -50px;
     background-color: blue;
     height: 100px;
     width: 200px;
-} */
+}
 
-/* .absolute-nested1{
+.absolute-nested1{
+    position: absolute;
+    bottom: 40px;
+    background-color: blueviolet;
+    height: 50px;
+    width: 100px;
+}
+
+.absolute-nested2{
     position: absolute;
     bottom: 10px;
     background-color: blueviolet;
     height: 50px;
     width: 100px;
-} */
+}
 
-/* .absolute-nested2{
-    position: absolute;
-    bottom: 10px;
-    background-color: blueviolet;
-    height: 50px;
-    width: 100px;
-} */
-
-/* .absolute-z1 {
+.absolute-z1 {
     position:relative;
     background-color: brown;
     left:300px;
     height: 100px;
     width: 100px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .absolute-z2 {
@@ -66,5 +66,5 @@
     background-color: gold;
     height: 100px;
     width: 100px;
-    z-index: 1;
-} */
+    z-index: 2;
+}
