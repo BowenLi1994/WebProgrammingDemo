@@ -1,0 +1,52 @@
+header{
+    background-color: brown;
+    text-align: center;
+    height: 50px;
+    color: gold;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+nav{
+    display: flex;
+    background-color: aquamarine;
+    height: 50px;
+}
+
+#logo-holder{
+    flex: 1;
+    width: 33%;
+     border: 1px solid black;
+     text-align: center;
+}
+
+#nav-bar{
+    flex:2;
+    border: 1px solid black;
+}
+
+#logo-pic{
+    height: 50px;
+    
+}
+
+#nav-list li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+    padding: 1px;
+    /* border: 1px solid black;  */
+    
+}
+
+#about-us{
+    background-color: grey;
+    height: 600px;
+    margin-top: 10px;
+}
+
+#resturant-pic{
+    height: 300px;
+    float:left;
+    margin-right: 10px;
+}
