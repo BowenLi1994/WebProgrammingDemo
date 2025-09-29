@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>createElement Example</title>
+</head>
+
+<body>
+    <h2>Adding new elements with JavaScript</h2>
+
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <br>
+    <button onclick="addParagraph()">Add New Paragraph</button>
+
+    <script>
+        function addParagraph() {
+            // Create a new paragraph element
+            var para = document.createElement("p");
+            // Create a text node
+            var node = document.createTextNode("This is new.");
+            // Append the text node to the paragraph
+            para.appendChild(node);
+            // Append the paragraph to the div
+            var element = document.getElementById("div1");
+            //  Append the new paragraph to the div
+            // element.appendChild(para);
+            // element.prepend(para);//to add at the beginning
+            element.append(para);//to add at the end
+        }
+    </script>
+</body>
+
+</html>

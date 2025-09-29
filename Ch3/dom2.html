@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementById Example</title>
+  </head>
+  <body>
+    <h1 id="header">Hello World!</h1>
+    <p id="para">This is a paragraph.</p>
+    <button onclick="changeContent()">Click me</button>
+
+    <script>
+      function changeContent() {
+       //1. getElementById
+        let headerElement = document.getElementById("header");
+        let paraElement = document.getElementById("para");
+
+        //2. change content
+        headerElement.innerHTML = "Title Changed!";
+        paraElement.innerHTML = "This paragraph has been updated!";
+      }
+    </script>
+  </body>
+</html>

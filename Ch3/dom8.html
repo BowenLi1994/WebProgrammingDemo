@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>replaceChild Example</title>
+  </head>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <br>
+    <button onclick="replaceParagraph()">Replace First Paragraph</button>
+
+    <script>
+      function replaceParagraph() {
+    
+        var para = document.createElement("p");
+
+        var node = document.createTextNode("This is new (replaced).");
+
+    
+        para.appendChild(node);
+
+        var parent = document.getElementById("div1");
+
+    
+        var child = document.getElementById("p1");
+
+        // parent.replaceChild(para, child);
+        child.replaceWith(para); // Modern way to replace an element
+      }
+    </script>
+  </body>
+</html>

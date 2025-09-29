@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove Child Example</title>
+  </head>
+  <body>
+    <div id="div1">
+      <p id="p1">This is a paragraph.</p>
+      <p id="p2">This is another paragraph.</p>
+    </div>
+
+    <br>
+    <button onclick="removeParagraph()">Delete First Paragraph</button>
+
+    <script>
+      function removeParagraph() {
+        var parent = document.getElementById("div1");
+        var child = document.getElementById("p1");
+
+        child.remove(); // Modern way to remove an element
+        // parent.removeChild(child); // Traditional way to remove an element
+      }
+    </script>
+  </body>
+</html>

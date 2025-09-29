@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+  </head>
+  <body>
+    <p>my first paragraph</p>
+    <p class="main">my first main paragraph</p>
+    <p class="main">my second main paragraph</p>
+    <a href="http://www.google.com">google</a>
+
+    <script>
+      // querySelector: select the first matching element
+      let firstMain = document.querySelector("p.main");
+      console.log("querySelector:", firstMain.textContent);
+
+      // querySelectorAll: select all matching elements and return a NodeList
+      let allMain = document.querySelectorAll("p.main");
+      console.log("querySelectorAll:", allMain);
+
+    </script>
+  </body>
+</html>
