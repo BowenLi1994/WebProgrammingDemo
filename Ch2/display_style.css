@@ -24,5 +24,6 @@
 	padding: 5px;
 	width: 100px;
 	text-align: center;
+	vertical-align: middle;
 	/* align-self: left; */
 }

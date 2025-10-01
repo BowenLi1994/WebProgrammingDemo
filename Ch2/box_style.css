@@ -28,3 +28,36 @@
     clear: both;
     border: 2px, solid, blue;
 }
+
+nav {
+    /* border: 1dvi solid black; */
+    /* padding: 20px;
+    margin: 30px; */
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+#name{
+    width: 40%;
+    font-weight: bold;
+    float: left;
+    background-color: green;
+}
+
+/* #menu{
+    width: 58%;
+    float: right;
+}
+
+#menu li{
+   list-style: none;
+    background-color: red;
+    display: inline-block;
+    margin-left: 20px;    
+} */
+
+#menu{
+    width: 50%;
+    background-color: red;
+    float: right;
+}

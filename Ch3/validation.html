@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form name="contactForm" onsubmit="return validateForm(event)">
+      <label>Full Name</label>
+      <input type="text" name="name">
+      <div class="error" id="nameErr"></div>
+
+      <label>Email Address</label>
+      <input type="email" name="email">
+      <div class="error" id="emailErr"></div>
+
+      <label>Password</label>
+      <input type="password" name="password">
+      <div class="error" id="passErr"></div>
+
+      <label>Mobile Number</label>
+      <input type="number" name="mobile">
+      <div class="error" id="mobileErr"></div>
+
+      <label>Country</label>
+      <select name="country">
+        <option value="">Select</option>
+        <option>USA</option>
+        <option>Canada</option>
+        <option>UK</option>
+        <option>China</option>
+      </select>
+      <div class="error" id="countryErr"></div>
+
+      <label>Gender</label>
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <div class="error" id="genderErr"></div>
+
+      <label>Hobbies</label>
+      <input type="checkbox" name="hobbies" value="Music"> Music
+      <input type="checkbox" name="hobbies" value="Sports"> Sports
+      <input type="checkbox" name="hobbies" value="Reading"> Reading
+      <div class="error" id="hobbiesErr"></div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function validateForm(e) {
+
+      //
+      var name = document.contactForm.name.value;
+      var email = document.contactForm.email.value;
+      var password = document.contactForm.password;
+      var mobile = document.contactForm.mobile.value;
+      var country = document.contactForm.country;
+      var gender = document.contactForm.gender;
+      var hobbies = [];
+      var checkboxes = document.getElementsByName("hobbies");
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          hobbies.push(checkboxes[i].value);
+        }
+      }     
+
+      // 1. Validate name field
+      if (name === "") {
+        // Check if the name field is empty
+        printError("nameErr", "Please enter your name");
+      } else {
+        // Regular expression: only letters and spaces are allowed
+        var regex = /^[a-zA-Z\s]+$/;
+        if (regex.test(name) === false) {
+          // If the input does not match the regex, show error
+          printError("nameErr", "Please enter a valid name");
+        } else {
+          // If everything is correct, clear error message
+          printError("nameErr", "");
+          nameErr = false;
+        }
+      }
+      console.log(name);
+
+      // 2. Validate email field
+      if (email == "") {
+        printError("emailErr", "Please enter your email address");
+      } else {
+        // Regular expression for basic email validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if (regex.test(email) === false) {
+          printError("emailErr", "Please enter a valid email address");
+        } else {
+          printError("emailErr", "");
+          emailErr = false;
+        }
+      }
+      console.log(email);
+
+
+
+
+      // stop automatic submission
+      var valid = false;
+      if (!valid) {
+        if (e) e.preventDefault();
+        return false;
+      }
+
+      return true;
+    }
+
+    function printError(elemId, errorMsg) {
+      document.getElementById(elemId).innerHTML = errorMsg;
+    }
+
+  </script>
+</body>
+
+</html>
