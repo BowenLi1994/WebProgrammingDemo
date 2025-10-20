@@ -12,7 +12,6 @@
     fwrite($handle, "ABCxyz");
     fclose($handle);
     ?>
-
     <br>
 
 </body>

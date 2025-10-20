@@ -13,13 +13,16 @@
     echo "data is: ";
     echo $data;
     echo "<br>";
-
+    $data = fread($handle, 10);
+    echo "data is: ";
+    echo $data;
+    echo "<br>";
 
 
     // $one_char = fgetc($handle);
     // echo "one char is: ";
     // echo $one_char;
-
+    
 
 
 
