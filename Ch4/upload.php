@@ -7,7 +7,7 @@
 <body>
     <?php
     if (isset($_REQUEST['submit1'])) {
-        print_r($_FILES);
+        // print_r($_FILES);
         echo "<br>";
 
         $file_name = $_FILES['file1']['name'];        //get the original name of the uploaded file

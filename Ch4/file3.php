@@ -10,6 +10,7 @@
     <?php
     $handle = fopen("test.txt", "w");
     fwrite($handle, "ABCxyz");
+    fwrite($handle, "ABCxyz");
     fclose($handle);
     ?>
     <br>
