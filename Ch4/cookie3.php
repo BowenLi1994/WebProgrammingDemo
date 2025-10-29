@@ -1,4 +1,6 @@
 <?php
+
+
 setcookie("username", "Bowen Li", time()+ 3600); // 1 hour expiration
 ?>
 <!DOCTYPE html>
