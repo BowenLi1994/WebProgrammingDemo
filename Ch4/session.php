@@ -23,5 +23,5 @@ if (!isset($_SESSION['count'])) {
         ?> times.
     </p>
 </body>
-
+x
 </html>
